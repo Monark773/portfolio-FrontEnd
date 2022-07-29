@@ -1,0 +1,118 @@
+.hard-skills{
+    background: grey;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hard-skills__contenedor{
+    width: 100%;
+    padding-top: 2rem;
+    background: linear-gradient(450deg, grey, black);
+    color: white;
+    padding-bottom: 3rem;
+}
+
+.hard-skills__titulo{
+    margin-bottom: 2rem;
+    text-align: center;
+    text-transform: uppercase;
+    width: 100%;
+    height: 50px;
+}
+
+
+
+.skills{
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+
+.skills:not(:last-child){
+    margin-bottom: 2rem;
+}
+
+
+
+.skills__detalles{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+}
+
+.skills__menu{
+    position: relative;
+    border: 1px solid rgb(153, 221, 199);
+    border-radius: 20px;
+}
+
+.skills__menu div{
+    position: relative;
+    width: 0;
+    height: .5rem;
+    border-radius: 10px;
+    background-color:rgb(146, 218, 194);
+}
+
+/* animacion */
+
+#html-menu{
+    animation: html-barra 2s forwards;
+}
+
+@keyframes html-barra{
+    100%{
+        width: 90%;
+    }
+}
+
+#css-menu{
+    animation: css-barra 2s forwards;
+}
+
+@keyframes css-barra{
+    100%{
+        width: 50%;
+    }
+}
+
+#angular-menu{
+    animation: angular-barra 2s forwards;
+}
+
+@keyframes angular-barra{
+    100%{
+        width: 20%;
+    }
+}
+
+#js-menu{
+    animation: js-barra 2s forwards;
+}
+
+@keyframes js-barra{
+    100%{
+        width: 30%;
+    }
+}
+
+@media screen and (min-width:1024px){
+    .hard-skills{
+        width:100%;
+        grid-area: hard-skills;
+        grid-column: 2/2;
+        grid-row: 1/2;
+        background-color: transparent;
+
+    }
+    .hard-skills__contenedor{
+        width: 90%;
+        border-radius: 20px;
+    }
+    .skills{
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+}

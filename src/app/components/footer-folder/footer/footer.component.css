@@ -1,0 +1,39 @@
+.footer {
+    background: grey;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.footer__imagen{
+    display: flex;
+    justify-content: center;
+}
+
+.footer__nombre{
+    color: white;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 1rem;
+    font-size: small;
+}
+
+.footer__boton-contenedor{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu__logo{
+    width: 180px;
+}
+
+@media screen and (min-width:1024px){
+    .footer__boton-contenedor{
+        width: 10%;
+        height: 60px;
+        background: transparent;
+    }
+
+   
+}

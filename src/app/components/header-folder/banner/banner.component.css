@@ -1,0 +1,16 @@
+.banner{
+    height: calc(100vh /3);
+    background: rgb(21, 21, 22);
+    display: flex;
+    justify-content: center;
+}
+
+@media screen and (min-width: 1024px){
+    .banner{
+        height: calc(100vh /2);
+        background: url(../../../../assets/pexels-anete-lusina-4792731.jpg);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+}

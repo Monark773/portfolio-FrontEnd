@@ -1,0 +1,20 @@
+.sobre-mi-skills{
+    width: 100vw;
+}
+
+@media screen and (min-width:1024px){
+    .sobre-mi-skills{
+        width: 100vw;
+        display: grid;
+        grid-template-areas: 
+        "sobre-mi"
+        "hard-skills"
+        ;
+        grid-template-columns: 30% 70%;
+        justify-content: center;
+        grid-gap:1rem;
+        padding-left: 2rem;
+        padding-top: 2rem;
+        background-color: rgb(31, 30, 30);
+    }
+}
